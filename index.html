@@ -4,7 +4,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>DAS FREMDWÖRTER SPIEL</title>
-	    <script src="main.js"></script>		
+	    		<script src="fittext.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="fittext.js"></script>
+		<script src="main.js"></script>
 	
 		<style> 
 	    <!--
@@ -12,6 +15,7 @@
 			width: 100%;
 			height: 100%;
 			margin: 0px;
+			background-color: #b1a7f1;
 		}
 		canvas {
 			padding: 0;
@@ -19,8 +23,17 @@
 			display: block;
 		}
 		div {
+			font-family: "Helvetica", "Verdana", "Calibri", "Arial", sans-serif;
 			margin: auto;
 			text-align: center;
+			max-width: 800px;
+			background-color: #caf599;
+		}
+		#newWordButton {
+			background-color: #f5cd99;
+		}
+		.desc {
+			background-color: #f5cd99;
 		}
 	    -->
 	   </style>
@@ -29,9 +42,19 @@
 
 	</head>
 	
-	<body>
-		<div><button type="button" onclick="loadNewWord();">Neues Wort!</button></div>
-		<div id="name">Kolloquium</div>
-		<div id="description" onclick="alert('you clicked');">wissenschaftliches Gespräch</div>
+	<body onload="main();">
+		<div id="fittext">
+		<div id="newWordButton" onclick="loadNewWord();">Klick mich für neue Wörter!</div>
+		<div class="name">Click</div>
+		<div class="name">on</div>
+		<div class="name">the</div>
+		<div class="name">button</div>
+		<div class="name">above</div>
+		<div class="name">to</div>
+		<div class="name">load</div>
+		<div class="name">new</div>
+		<div class="name">words</div>
+		<div class="name">!</div>
+		</div>
 	</body>
 </html>
