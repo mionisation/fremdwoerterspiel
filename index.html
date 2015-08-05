@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>DAS FREMDWÖRTER SPIEL</title>
+        <title>WEIRD WORD GENERATOR</title>
 	    		<script src="fittext.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="jquery.animate-colors-min.js"></script>
@@ -30,16 +30,18 @@
 			max-width: 800px;
 			color:#FFFFFF;
 		}
-		.name {
-			background-color:#FFFFFF;
-		}
+
 		#newWordButton {
 			font-family: "Impact", "Arial Black", "Arial", sans-serif;
-			background-color:#FFFFFF;
 		}
 		.desc {
 			font-family: "Trebuchet MS", "Tahoma", "Calibri", "Verdana", "Arial", sans-serif;
-			background-color:#FFFFFF;
+		}
+		
+		.lang {
+			font-family: "Impact", "Arial Black", "Arial", sans-serif;
+			width: 50%;
+			float:left;
 		}
 	    -->
 	   </style>
@@ -50,17 +52,18 @@
 	
 	<body onload="main();">
 		<div id="fittext">
-		<div id="newWordButton" onclick="loadNewWord();setRandomStyle();">Klick mich für neue Wörter!</div>
-		<div class="name">Click</div>
-		<div class="name">here</div>
-		<div class="name">to</div>
-		<div class="name">read</div>
-		<div class="name">the</div>
-		<div class="name">description</div>
-		<div class="name">load</div>
-		<div class="name">new</div>
-		<div class="name">words</div>
+		<div id="newWordButton" onclick="loadNewWord();setRandomStyle();"><span>Click me for new words!</span></div>
+		<div class="name">Click on</div>
+		<div class="name">one of these</div>
+		<div class="name">rows to</div>
+		<div class="name">read the</div>
+		<div class="name">description.</div>
+		<div class="name"></div>
+		<div class="name"></div>
+		<div class="name">Have</div>
+		<div class="name">fun</div>
 		<div class="name">!</div>
+		<div class="lang" onclick="langEng();">English</div><div class="lang" onclick="langGer();">Deutsch</div>
 		</div>
 	</body>
 </html>
